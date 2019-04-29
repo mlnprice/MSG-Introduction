@@ -18,20 +18,20 @@ except ImportError:
     read_md = lambda f: open(f, 'r').read()
 
 from os import path
-setup(name='',
-      version='',
-      description='',
+setup(name='my_pkg',
+      version='0.0.1',
+      description='This is for practice using docker terminal and python',
       long_description= "" if not path.isfile("README.md") else read_md('README.md'),
-      author='',
-      author_email='',
-      url='',
-      license='',
+      author='Melanie Price',
+      author_email='mlnprice@hotmail.com',
+      url='github.com/mlnprice/MSG-Introduction',
+      license='MIT',
       setup_requires=['pytest-runner',],
       tests_require=['pytest', 'python-coveralls'],
       install_requires=[
           "numpy",
       ],
-      packages=[''],
+      packages=['my_pkg'],
       # scripts=[''],
       include_package_data=True,
       classifiers=[
