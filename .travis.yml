@@ -1,0 +1,13 @@
+language: python
+python:
+  - "2.7"
+  - "3.4"
+# command to install dependencies
+install:
+  - pip install .
+  - pip install tox
+# - pip install -r requirements.txt
+# requirements.txt may contain packages that aren't in setup.py
+
+# command to run tests
+script: tox  
