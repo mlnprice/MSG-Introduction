@@ -22,7 +22,10 @@ def factorial(n):
         ValueError: If n is not an integer.
     """
     if not isinstance(n,int):
-        raise ValueError("The input to factorial must be an integer.")
+        if int(n) == n:
+            n = int(n)
+        else:
+            raise ValueError("The input to factorial must be an integer.")
 
     if n < 0:
         fact = 1
