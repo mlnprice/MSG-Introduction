@@ -27,7 +27,7 @@ def factorial(n):
         else:
             raise ValueError("The input to factorial must be an integer.")
 
-    if n < 0:
+    if n =< 0:
         fact = 1
     else:
         fact = n
